@@ -25,7 +25,7 @@ public class Order {
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinColumn
     private User buyer;
-    @Column(name = "destination")
+    @Column(name = "destination_address")
     private String destination;
     private LocalDateTime dateOfCreated;
 
